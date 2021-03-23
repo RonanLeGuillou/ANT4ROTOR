@@ -2,7 +2,7 @@
 
 Authors : Martin Schmoll, Ronan Le Guillou, Christine Azevedo
 
-Code intended for free use as open source project, refer to the included MIT licence for legal specifications.
+Code intended for free use as open source project, refer to the included MIT license for legal specifications.
 
 Python program enabling fast mode data acquisition for the ROTOR 2INPOWER commercially available bike crank power-meter. The goal being to acquire detailed data throughout pedalling cycles like for the crank angle or the torque production. 
 
