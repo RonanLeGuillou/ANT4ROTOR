@@ -2,6 +2,8 @@
 
 Authors : Martin Schmoll, Ronan Le Guillou, Christine Azevedo
 
+### Introduction
+
 Code intended for free use as open source project, refer to the included MIT license for legal specifications.
 
 Python program enabling fast mode data acquisition for the ROTOR 2INPOWER commercially available bike crank power-meter. The goal being to acquire detailed data throughout pedalling cycles like for the crank angle or the torque production. 
@@ -11,13 +13,16 @@ Based on the openANT (by Gustav Tiger) ANT+ communication protocol's Python libr
 
 Tested on Raspberry Pi 3B v1.2 with RaspberryOS/Raspbian only.
 
-Install instructions :
+### Install instructions :
 
 Use these specific recommended packages :
 
 python2
+
 python-usb   	(for python 2, version was 1.0.2-1)
+
 python-serial	(for python 2, version was 3.4-4)
+
 
 (You can use the requirements.txt file to get the exact packages and versions that were used for the last test)
 
