@@ -29,11 +29,11 @@ python-serial	(for python 2, version was 3.4-4)
 Move (or copy) the ant-usb-sticks.rules file into /etc/udev/rules.d folder alongside the default 99-com.rules file.
 This file creates a ttyANTX link in /dev so that the ANT communication dongle device can be referred to. 
 For debuging purposes, if you have connection problems, the opening of the device port is in the openANT/ant/base/driver.py file, in the USBDriver class, in the open() method. 
-However, check first if your Ant+ dongle is detected with lsusb, and if ttyANT3 (for example) appears in the /etc folder. Otherwise make sure that the udev rules used are appropriate to your system.
+However, check first if your Ant+ dongle is detected with lsusb, and if ttyANT3 (for example) appears in the /etc folder. Otherwise make sure that the udev rules used are appropriate to your system and the device you are using. One pair of idVendor and idProduct in the ant-usb-sticks.rules should match the ones you see on your Ant+ dongle when using the lsusb command. 
 
-Reboot your raspberry pi.
+Then reboot your raspberry pi for the new rules to apply.
 
-Start myOpenANT_Manager.py with python2, and move the crank of your ROTOR device so that it wakes up and can be connected to.
+Start myOpenANT_Manager.py with python2 and move the crank of your ROTOR device so that it wakes up and can be connected to.
 
 Samplerate should be 40Hz or higher depending of the parameters requested to the ROTOR device. Enjoy !
 
